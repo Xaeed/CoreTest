@@ -10,8 +10,6 @@ namespace testing.persistence
         {
 
         }
-
-        
         public DbSet<Make> Make { get; set; }
         
         public DbSet<Model> Model { get; set; }
