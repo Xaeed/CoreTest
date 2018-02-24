@@ -19,8 +19,7 @@ namespace testing.Controllers
         [HttpGet("api/makes")]
         public async Task<IEnumerable<Make>> GetMakes()
         {
-            return await  context.Make.Include(m=>m.Name)
-            .ToListAsync();
+            return await  context.Make.Include(m=>m.Name).ToListAsync();
         }
 
 
