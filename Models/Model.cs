@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -14,5 +16,11 @@ namespace testing.Models
          public string Name { get; set; }
          public Make Make { get; set; }
          public int MakeId { get; set; }
+          public ICollection<Features> Features {get;set;}
+        public Model()
+        {
+
+            Features = new Collection<Features>();
+        }
     }
 }

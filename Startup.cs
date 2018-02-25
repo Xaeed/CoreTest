@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using testing.persistence;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace testing
 {
@@ -24,6 +25,7 @@ namespace testing
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper();
             services.AddDbContext<TestingDbContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString("Default")));
             services.AddMvc();
         }
