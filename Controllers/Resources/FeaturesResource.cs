@@ -10,6 +10,11 @@ namespace testing.Controllers.Resources
        
 
          public string Name { get; set; }
+          public bool PowerSteering { get; set; }
+
+        public bool   Automatic { get; set; }
+         public bool GPS { get; set; }
+        
         // public Make Make { get; set; }
         // public int MakeId { get; set; }
 

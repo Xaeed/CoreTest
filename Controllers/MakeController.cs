@@ -27,5 +27,15 @@ namespace testing.Controllers
               var makes= await context.Make.Include(m=>m.Model).ToListAsync();
               return mapper.Map<List<Make>,List<MakeResources>>(makes);
         }
+
+        [HttpGet("api/model")]
+        public async Task<IEnumerable<ModelResources>> GetModel()
+        {
+
+            var featur= await context.Model.Include(x=>x.Features).ToListAsync();
+            return mapper.Map<List<Model>,List<ModelResources>>(featur);
+        }
+       
+
     }
 }

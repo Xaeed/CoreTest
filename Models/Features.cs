@@ -7,6 +7,7 @@ namespace testing.Models
 
         public bool   Automatic { get; set; }
          public bool GPS { get; set; }
+         public string     Name { get; set; }
 
         public Model Model  {get;set;}
        public int ModelID { get; set; }
