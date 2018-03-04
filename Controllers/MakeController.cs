@@ -32,7 +32,7 @@ namespace testing.Controllers
         public async Task<IEnumerable<ModelResources>> GetModel()
         {
 
-            var featur= await context.Model.Include(x=>x.Features).ToListAsync();
+            var featur= await context.Models.Include(x=>x.Features).ToListAsync();
             return mapper.Map<List<Model>,List<ModelResources>>(featur);
         }
        
