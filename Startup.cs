@@ -38,7 +38,10 @@ namespace testing
                 app.UseDeveloperExceptionPage();
                 app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
                 {
-                    HotModuleReplacement = true
+                  
+                    HotModuleReplacement = true,
+                 HotModuleReplacementEndpoint = "/dist/__webpack_hmr",
+                   ConfigFile = "webpack.config.js"
                 });
             }
             else
