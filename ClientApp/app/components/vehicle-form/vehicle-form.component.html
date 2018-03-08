@@ -1,6 +1,5 @@
 <form >
-<<<<<<< HEAD
-=======
+
   <!-- <div class="form-group">
     <label for="make">Make</label>
       <select  id="make" class="form-control" >  (change)="OnMakeChange()" [(ngModel)]="vehicle.makes" name="makes"> 
@@ -16,17 +15,16 @@
       <label for="model">Model</label>
       <select  id="model" class="form-control"></select>
     </div> -->
->>>>>>> 3b30abac62262acc4deda0970debe30a30a7efa0
->>>>>>> ccba1ae434a6ed2893407e699662a1ac4d2d56b1
+
   
 
     <div class="form-group">
       <label for="make">Make</label>
-<<<<<<< HEAD
+
         <select id="make" class="form-control" (change)="onMakeChange()"  [(ngModel)]="makes.make" name="make">
-=======
+
       <select id="make" class="form-control" (change)="onMakeChange()" [(ngModel)]="vehicle.make" name="make">
->>>>>>> ccba1ae434a6ed2893407e699662a1ac4d2d56b1
+
         <option value=""></option>
         <option *ngFor="let m of makes" value="{{ m.id }}">{{ m.name }}</option>
       </select>
