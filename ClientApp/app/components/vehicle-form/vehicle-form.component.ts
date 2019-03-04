@@ -7,28 +7,16 @@ import { MakeService } from '../../Services/make.service';
   styleUrls: ['./vehicle-form.component.css']
 })
 export class VehicleFormComponent implements OnInit {
-       // makes:string;
-<<<<<<< HEAD
-      //  make:{};
 
-
-      //    makes: any[]; 
-      // models: any[];
-      // features: any[];
-     // vehicle: any = {};
      makes: any[]; 
      models: any[];
      features: any[];
      make: any = {};
-=======
         vehicle:{};
-
-
          makes: any[]; 
       models: any[];
       features: any[];
      // vehicle: any = {};
->>>>>>> ccba1ae434a6ed2893407e699662a1ac4d2d56b1
   constructor(private makeService:MakeService) { }
 
   ngOnInit() {
@@ -38,17 +26,12 @@ export class VehicleFormComponent implements OnInit {
        
     });
     
-  }
-<<<<<<< HEAD
-  onMakeChange( ) {
+  },
+
+  onMakeChange() {
       var selectedMake = this.makes.find((item)=> item.id == this.make.make);
      this.models =  selectedMake ? selectedMake.models : [];
       console.log("id",selectedMake)
-=======
-  onMakeChange() {
-    // var selectedMake = this.makes.find(m => m.id == this.vehicle.make);
-    // this.models = selectedMake ? selectedMake.models : [];
-console.log("Makings")
->>>>>>> ccba1ae434a6ed2893407e699662a1ac4d2d56b1
-  }
+
+ 
 }
